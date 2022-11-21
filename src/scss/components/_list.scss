@@ -1,0 +1,105 @@
+.list {
+  list-style: none;
+}
+
+.list-item {
+  @include flex(center, row, space-between);
+  @include border-radius;
+  @include box-shadow;
+  background: $color-alpha;
+  font-size: $font-size-m;
+  padding: 2rem 3.6rem;
+
+  &:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+
+  &__date {
+    @include flex(center, column, center);
+    @include border-radius;
+    background: $color-gamma;
+    color: $color-alpha;
+    flex: 0 0 14rem;
+    font-size: $font-size-m;
+    line-height: 1.6;
+    max-width: 14rem;
+    padding: 0.8rem 3.2rem;
+
+    &--year {
+      font-weight: 500;
+    }
+    &--month {
+      font-weight: 300;
+    }
+    &--day {
+      font-weight: 200;
+    }
+  }
+
+  &__content {
+    padding: 0 2rem 0 3.8rem;
+    transform: translateY(-1.2rem);
+    flex: 0 1 60%;
+
+    &--title {
+      font-size: $font-size-l;
+    }
+
+    &--description {
+      font-size: $font-size-s;
+      min-width: 46rem;
+    }
+  }
+
+  &__u {
+    flex: 0 0 20%;
+  }
+
+  &__amount {
+    @include border-radius;
+    background: $color-gamma;
+    color: $color-alpha;
+    font-weight: 300;
+    min-width: 14rem;
+    padding: 0.8rem 2.8rem;
+    text-align: center;
+  }
+
+  &--animate-from-top {
+    animation: moveInFromTop 0.5s ease-in;
+  }
+
+  // &--remove {
+  //   animation: remove 0.5s ease-in;
+  // }
+
+  @keyframes moveInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-1.2rem);
+    }
+    80% {
+      opacity: 0.5;
+      transform: translateY(0.8rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // @keyframes remove {
+  //   0% {
+  //     opacity: 1;
+  //     transform: translateY(1.2rem);
+  //   }
+  //   80% {
+  //     opacity: 0.5;
+  //     transform: translateY(0.8rem);
+  //   }
+  //   100% {
+  //     opacity: 0;
+  //     transform: translateY(-1.2);
+  //   }
+  // }
+}

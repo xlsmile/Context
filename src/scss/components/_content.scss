@@ -1,0 +1,10 @@
+.content {
+  background-color: $color-dark;
+  display: flex;
+  flex-direction: column;
+  padding: 5.2rem 6rem;
+  gap: 4.2rem;
+  width: 50vw;
+  margin-inline: auto;
+  box-shadow: 0 0 20px #1b1e26;
+}

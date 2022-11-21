@@ -1,0 +1,17 @@
+.title {
+  &__primary,
+  &__secondary {
+    color: white;
+  }
+
+  &__primary {
+    font-size: 4.6rem;
+    padding: 1.6rem 5.2rem;
+    background-color: $color-default;
+    box-shadow: 0 0.2rem 0.4rem rgb(0 0 0 / 0.6);
+  }
+
+  &__secondary {
+    font-size: calc(1rem + 2vmin);
+  }
+}
