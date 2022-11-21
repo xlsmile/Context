@@ -3,14 +3,9 @@ import { useState } from "react";
 const UserLogin = () => {
 
   const [userName, setUserName] = useState("");
-  const [showProfile, setShowProfile] = useState(false);
 
   const handleUserName = (e) => {
     setUserName(e.target.value);
-  }
-
-  const handleShowProfile = () => {
-    setShowProfile(true);
   }
 
   return (
@@ -24,11 +19,9 @@ const UserLogin = () => {
         <input  className="form__input" id="userpassword" type="password" />
       </div>
       <div className="form__group--buttons">
-        <button className="cta cta--success" onClick={handleShowProfile}>Login</button>
+        <button className="cta cta--success">Login</button>
       </div>
-      <div>
-        {showProfile && <p className="text">{userName}</p>}
-      </div>
+      <div>{userName}</div>
     </>
   )
 }

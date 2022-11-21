@@ -1,12 +1,17 @@
+import { useState } from "react";
 import UserLogin from "./Components/UserLogin";
+import UserProfile from "./Components/UserProfile";
 
-const App = () =>  {
+const App = () => {
+
+  const [showProfile, setShowProfile] = useState(false);
+
   return (
     <div className="content">
       <header className="header">
         <h1 className="title__primary">React Context</h1>
       </header>
-      <UserLogin />
+      {showProfile ? <UserProfile /> : <UserLogin />}
     </div>
   );
 }
