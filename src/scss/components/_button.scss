@@ -1,7 +1,7 @@
 .cta {
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.4);
   @include border-radius;
-  background: $color-alpha;
+  background: $color-white;
   border: none;
   cursor: pointer;
   font-family: inherit;
@@ -12,7 +12,8 @@
   transition: all 0.2s;
 
   &:hover {
-    background: lighten($color-alpha, 2%);
+    background: lighten($color-default, 2%);
+    color: $color-white;
   }
 
   &:active {
@@ -51,6 +52,10 @@
 
   &__submit {
     margin-top: 3.2rem;
+  }
+
+  &--start {
+    align-self: start;
   }
 
   &--success {

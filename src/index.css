@@ -65,10 +65,18 @@ body {
   font-size: 2rem;
 }
 
+.fa-xs {
+  vertical-align: 0.025em;
+}
+
+.fa-chevron-left {
+  margin-right: 0.4em;
+}
+
 .cta {
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.4);
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
-  background: #fff7f0;
+  background: #fff;
   border: none;
   cursor: pointer;
   font-family: inherit;
@@ -79,7 +87,8 @@ body {
   transition: all 0.2s;
 }
 .cta:hover {
-  background: #fffcfa;
+  background: #3d598a;
+  color: #fff;
 }
 .cta:active {
   box-shadow: 0 0.2rem 0.4rem rgba(33, 37, 47, 0.2);
@@ -112,6 +121,9 @@ body {
 }
 .cta__submit {
   margin-top: 3.2rem;
+}
+.cta--start {
+  align-self: start;
 }
 .cta--success {
   background: #3a8340;

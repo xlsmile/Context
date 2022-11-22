@@ -13,7 +13,7 @@ const App = () => {
       <header className="header">
         <h1 className="title__primary">React Context</h1>
       </header>
-      <LoginContext.Provider value={{userName, setUserName, setShowProfile}} >
+      <LoginContext.Provider value={{userName, setUserName, setShowProfile}}>
         {showProfile ? <UserProfile /> : <UserLogin />}
       </LoginContext.Provider>
     </div>
