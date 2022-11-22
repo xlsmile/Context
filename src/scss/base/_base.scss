@@ -28,3 +28,9 @@ body {
     background: $color-danger;
   }
 }
+
+#root {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
