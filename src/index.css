@@ -44,7 +44,7 @@ body {
   }
 }
 
-.title__primary, .title__secondary {
+.title__primary, .title__secondary, .title__tertiary {
   color: white;
 }
 .title__primary {
@@ -54,6 +54,9 @@ body {
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.6);
 }
 .title__secondary {
+  font-size: calc(1.6rem + 2vmin);
+}
+.title__tertiary {
   font-size: calc(1rem + 2vmin);
 }
 

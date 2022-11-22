@@ -1,6 +1,7 @@
 .title {
   &__primary,
-  &__secondary {
+  &__secondary,
+  &__tertiary {
     color: white;
   }
 
@@ -12,6 +13,10 @@
   }
 
   &__secondary {
+    font-size: calc(1.6rem + 2vmin);
+  }
+
+  &__tertiary {
     font-size: calc(1rem + 2vmin);
   }
 }

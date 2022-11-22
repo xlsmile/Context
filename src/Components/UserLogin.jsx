@@ -1,27 +1,23 @@
-import { useState } from "react";
+import {useContext} from "react";
+import {LoginContext} from "../Components/Context/LoginContext";
 
 const UserLogin = () => {
 
-  const [userName, setUserName] = useState("");
-
-  const handleUserName = (e) => {
-    setUserName(e.target.value);
-  }
+  const {setUserName, setShowProfile} = useContext(LoginContext);
 
   return (
     <>
       <div>
         <label className="form__label" htmlFor="username">User Name</label>
-        <input className="form__input" id="username" type="text" onChange={handleUserName}/>
+        <input className="form__input" id="username" type="text" onChange={(e) => setUserName(e.target.value)}/>
       </div>
       <div>
         <label  className="form__label" htmlFor="userpassword">User Password</label>
         <input  className="form__input" id="userpassword" type="password" />
       </div>
       <div className="form__group--buttons">
-        <button className="cta cta--success">Login</button>
+        <button className="cta cta--success" onClick={() => setShowProfile(true)}>Login</button>
       </div>
-      <div>{userName}</div>
     </>
   )
 }
