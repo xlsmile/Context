@@ -70,13 +70,13 @@ body {
 }
 
 .fa-chevron-left {
-  margin-right: 0.4em;
+  margin-right: 0.8em;
 }
 
 .cta {
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.4);
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
-  background: #fff;
+  background: #fff7f0;
   border: none;
   cursor: pointer;
   font-family: inherit;
@@ -119,8 +119,10 @@ body {
 .cta__cancel:hover::after {
   transform: scaleX(1);
 }
-.cta__submit {
-  margin-top: 3.2rem;
+.cta__back, .cta__submit {
+  background: #3a5483;
+  color: #fff;
+  margin-top: 2rem;
 }
 .cta--start {
   align-self: start;
