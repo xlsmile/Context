@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {LoginContext} from "./Components/Context/LoginContext";
-import UserLogin from "./Components/UserLogin";
-import UserProfile from "./Components/UserProfile";
+import UserLogin from "./Components/User/UserLogin";
+import UserProfile from "./Components/User/UserProfile";
 
 const App = () => {
 
